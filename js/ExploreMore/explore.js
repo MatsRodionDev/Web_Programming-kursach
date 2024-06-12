@@ -74,3 +74,11 @@ function unreg()
   document.querySelector('.account-butt').classList.add('hidden2')
   document.querySelector('.offers').classList.add('hidden2')
 }
+
+window.addEventListener("load", function() {
+  const loaderWrapper = document.getElementById("loader-wrapper");
+  loaderWrapper.style.opacity = "0";
+  setTimeout(function() {
+    loaderWrapper.style.display = "none";
+  }, 300);
+});
