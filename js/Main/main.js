@@ -106,7 +106,7 @@ function reg()
   document.querySelector('.logButt').classList.add('hidden-reg')
   document.getElementById('reg-butt').classList.add('hidden-reg')
   document.querySelector('.log-out').classList.remove('hidden-reg')
-  // document.querySelector('.Registration').classList.add('hidden-reg')
+  document.querySelector('.Registration').classList.add('hidden-reg')
   document.querySelector('.offers').classList.remove('hidden-reg')
   document.querySelector('.blog').classList.remove('hidden-reg')
   document.querySelector('.Authorization').classList.add('hidden2')
@@ -124,3 +124,10 @@ function unreg()
   document.querySelector('.l-account-butt').classList.add('hidden-reg')
 }
 
+window.addEventListener("load", function() {
+  const loaderWrapper = document.getElementById("loader-wrapper");
+  loaderWrapper.style.opacity = "0";
+  setTimeout(function() {
+    loaderWrapper.style.display = "none";
+  }, 300);
+});
