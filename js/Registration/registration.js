@@ -336,7 +336,7 @@ addEventListener('load', function(){
           !(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,20}$/.test(nickname))
         );
         document.getElementById('nickname-reg').value = nickname;
-        
+        validateFields();
     }
 
     k = 0;
@@ -360,6 +360,7 @@ addEventListener('load', function(){
       );
       document.getElementById('password-reg').value = nickname;
       document.getElementById('confirm-password-reg').value = nickname;
+        validateFields();
   }
 
   var formIsValid = true;
