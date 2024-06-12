@@ -1263,7 +1263,9 @@ input[type="email"] {
     }
 
     header div.container{
-        padding: 0px;
+        padding: 0;
+        display: flex;
+        justify-content: center;
     }
 
     .offers-toggle-left img{
@@ -1279,10 +1281,8 @@ input[type="email"] {
     
     .header-row
     {
+        width: 87.5%;
         flex-wrap: wrap;
-        max-width: 280px;
-        margin: 0 20px;
-        margin-top: 20px;
     }
     .header-row-traveland
     {
