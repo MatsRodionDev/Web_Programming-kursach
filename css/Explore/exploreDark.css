@@ -873,7 +873,7 @@ footer
 
         }
 
-        @media (min-width: 320px) and (max-width: 768px)
+        @media (min-width: 391px) and (max-width: 768px)
         {
             /* .main-column-block-row{
                 flex-direction: column;
